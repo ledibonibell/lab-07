@@ -152,6 +152,22 @@ $ git add .
 $ git commit -m "Pushing project"
 $ git push origin master
 ```
+After make a `.yml` file
+
+`Action.yml` contents:
+```
+name: docker
+on:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: build docker
+        run: docker build -t logger .
+```
 
 Now we will test our project in local repositories
 
