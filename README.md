@@ -4,6 +4,7 @@
 # Task 1
 
 Let's create the executable files for this lab. They will be in separate folders, which will then be linked using `CMakeLists.txt`:
+
 Make `print.hpp`
 
 ```
